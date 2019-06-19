@@ -3,18 +3,19 @@ package com.example.my_food;
 public class ModelFood {
 
     private int image;
-    private String name,place,price,item_image1;
+    private String name;
 
-    public ModelFood(int image, String name, String hg, String s) {
+    public ModelFood(int image, String name, String place, String price, String item_image1) {
         this.image = image;
-        this.name = this.name;
+        this.name = name;
         this.place = place;
         this.price = price;
         this.item_image1 = item_image1;
     }
 
-
-
+    private String place;
+    private String price;
+    private String item_image1;
 
     public int getImage() {
         return image;

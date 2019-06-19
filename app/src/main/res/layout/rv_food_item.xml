@@ -32,7 +32,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Fast_Food"/>
+                android:text="Fast_Food"
+                />
 
             <TextView
                 android:id="@+id/item_place"

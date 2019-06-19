@@ -51,17 +51,16 @@ public class Foodadapter extends RecyclerView.Adapter<Foodadapter.ViewHolder>  {
         ModelFood itemfood=modelList.get(i);
 
 
-        ImageView image=viewHolder.item_image1;
-        TextView item_name,item_place,item_price;
-        TextView name = viewHolder.item_name;
-        TextView place=viewHolder.item_place;
-        TextView price=viewHolder.item_price;
+//        ImageView image=viewHolder.item_image1;
+//        TextView name = viewHolder.item_name;
+//        TextView place=viewHolder.item_place;
+//        TextView price=viewHolder.item_price;
 
-        image.setImageResource(modelList.get(i).getImage());
 
-        name.setText(itemfood.getName());
-        place.setText(itemfood.getPlace());
-        price.setText(itemfood.getPrice());
+        viewHolder.item_image1.setImageResource(itemfood.getImage());
+        viewHolder.item_name.setText(itemfood.getName());
+        viewHolder.item_place.setText(modelList.get(i).getPlace());
+        viewHolder.item_price.setText(modelList.get(i).getPrice());
 
     }
 
